@@ -1,0 +1,62 @@
+package practice_Questions;
+
+import java.util.Scanner;
+
+public class miniProject {
+	public static void main(String[] args) {
+		int password=12345;
+		int id=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your password");
+		int a=sc.nextInt();
+		if(password==a) {
+			System.out.println("Congrulations!!!!");
+			 id=id+1;
+			 System.out.println("Id= "+id);
+		}
+		else
+		{
+			System.out.println("Incorrect Password");
+			return;
+		}
+		System.out.println("Enter your name");
+		String s=sc.next();
+		System.out.println("Enter the id");
+		int d=sc.nextInt();
+		if(id==d) {
+			System.out.println("Welcome!!!! "+s);
+			System.out.println("Press 1 for insert personal details");
+			System.out.println("Press 2 to know more");
+			System.out.println("Press 3 for any kind of review");
+			
+			int e=sc.nextInt();
+			switch(e) {
+			case 1:
+				System.out.println("Enter your full name:");
+				String q=sc.next();
+				System.out.println("Enter your father name");
+				String w=sc.next();
+				System.out.println("Enter your mother name");
+				String r=sc.next();
+				System.out.println("Enter your mobile number");
+				long o=sc.nextLong();
+				break;
+			case 2:
+				System.out.println("This is a user APPLICATION FORM which is basically "
+						+ "for the user storing their personal"
+						+ "details int this form");
+				break;
+			case 3:
+				System.out.println("Enter any review about this Miniproject");
+				String n=sc.next();
+				System.out.println(n);
+				System.out.println("THANKYOU!!!!!!");
+				break;
+			}
+		}else
+		{
+			System.out.println("ID doesn't match!!!!");
+			System.out.println("Try again");
+		}	
+	}
+}
