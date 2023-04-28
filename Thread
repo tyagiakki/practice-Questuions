@@ -1,0 +1,12 @@
+package practice_question;
+
+public class W3 extends Thread{
+	public void run() {
+		System.out.println("This is running inside the class");
+	}
+	public static void main(String[] args) {
+		W3 w=new W3();
+		w.start();
+		System.out.println("This is runnig outside the thread");
+	}
+}
