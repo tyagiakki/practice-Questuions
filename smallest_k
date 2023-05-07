@@ -1,0 +1,17 @@
+
+import java.util.Arrays;
+
+public class smallest_k {
+	public static int smallest(int a[],int n,int k) {
+		Arrays.sort(a);
+		return a[k-1];
+	}
+	public static void main(String[] args) {
+		int a[]= {1,2,311,4,5,6};
+		int n=a.length;
+		int k=3;
+		System.out.print(smallest(a,n,k));
+		
+	}
+
+}
