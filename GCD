@@ -1,0 +1,32 @@
+package practice_question;
+
+public class GCD {
+	public static void main(String[] args) {
+	int x=50;
+	int y=60;
+	//APPROACH 2--------
+//	int min=x<y?x:y;
+//	while(min!=0) {
+//		if(x%min==0 && y%min==0) {
+//			System.out.println("GCD " +min);
+//			return;
+//		}
+//	}
+	//APPROACH 2------
+	while(x!=y) {
+		if(x>y) {
+			x=x-y;
+			//System.out.println(x);
+		}
+		else
+		{
+			y=y-x;
+			
+		}
+		
+	}
+	System.out.println(y);
+	}
+
+}
+//OUTPUT-  10
